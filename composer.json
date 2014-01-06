@@ -1,0 +1,23 @@
+{
+    "name": "benepfist/artisan-utility",
+    "description": "Add Alias and ServiceProvider using the cli",
+    "authors": [
+        {
+            "name": "Benedict Pfisterer",
+            "email": "pfiserer.bene@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Benepfist\\ArtisanUtility\\": "src/"
+        },
+        "classmap": [
+            "src/Benepfist/ArtisanUtility"
+        ]
+    },
+    "minimum-stability": "dev"
+}
