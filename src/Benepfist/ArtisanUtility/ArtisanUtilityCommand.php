@@ -45,25 +45,25 @@ class ArtisanUtilityCommand extends Command {
 		$this->installer->updateConfigurations($providers, $aliases);
 		$this->showMessage('Providers', $providers);
 		$this->showMessage('Aliases', $aliases);
-		/*
-		$this->installer->updateConfigurations
 
-		 */
 	}
 
 	/**
 	 * prints succes message
 	 *
-	 * @param array $providers
+	 * @param array $items
 	 * 
 	 */
-	protected function showMessage($key, array $providers = array())
+	protected function showMessage($key, array $items = array())
 	{
-		$this->info($key);
-		foreach($providers as $provider){
-			$this->info($provider);
+		if(count($items)){
+			$this->info($key);
+			foreach($items as $item){
+				$this->info($item);
+			}
+			$this->info('has been added to app.php');
 		}
-		$this->info('has been added to app.php');
+
 	}
 
 	/**
@@ -74,7 +74,6 @@ class ArtisanUtilityCommand extends Command {
 	protected function getArguments()
 	{
 		return array(
-			//array('ServiceProvider', InputArgument::REQUIRED, 'Name of the serviceprovider to add.'),
 		);
 	}
 
