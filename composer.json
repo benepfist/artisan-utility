@@ -1,6 +1,7 @@
 {
     "name": "benepfist/artisan-utility",
     "description": "Add Alias and ServiceProvider using the cli",
+    "keywords": ["laravel", "artisan", "alias", "ServiceProvider"],
     "authors": [
         {
             "name": "Benedict Pfisterer",
