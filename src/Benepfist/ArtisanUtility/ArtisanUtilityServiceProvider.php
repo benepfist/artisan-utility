@@ -12,16 +12,6 @@ class ArtisanUtilityServiceProvider extends ServiceProvider {
 	protected $defer = false;
 
 	/**
-	 * Bootstrap the application events.
-	 *
-	 * @return void
-	 */
-	public function boot()
-	{
-		$this->package('benepfist/artisan-utility');
-	}
-
-	/**
 	 * Register the service provider.
 	 *
 	 * @return void
