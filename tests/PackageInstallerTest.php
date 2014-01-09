@@ -48,8 +48,7 @@ class PackageInstallerTest extends \PHPUnit_Framework_TestCase {
 
         $installer->updateConfigurations($providers, $aliases);
 
-        $this->assertEquals($installer->getContents(), file_get_contents(__DIR__.'/stubs/app_new.php'));
-
+        $this->assertStringEqualsFile(__DIR__.'/stubs/app_new.php', $installer->getContents());
 
     }
 
