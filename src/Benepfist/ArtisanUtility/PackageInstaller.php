@@ -40,6 +40,15 @@ class PackageInstaller
 		$this->config = $config;
 	}
 
+	/** 
+	 * returns the updated contents
+	 * 
+	 * @return string $contentsCache only for testing
+	 */
+	public function getContents(){
+		return $this->contentsCache;
+	}
+
 	/**
 	 * Updates the app.php file
 	 * 
@@ -83,7 +92,7 @@ class PackageInstaller
 	}
 
 	/**
-	 * [getAliasMap description]
+	 * Mapps the aliases
 	 * 
 	 * @param  array  $aliases
 	 * @return array         
@@ -92,7 +101,6 @@ class PackageInstaller
 	{
 		$aliasMap = array();
 		foreach ($aliases as $alias) {
-			//array_push($aliasMap, preg_split('/, ?/', $alias));
 			$intAlias = preg_split('/ => ?/', $alias);
 			$aliasMap[ $intAlias[0] ] = $intAlias[1];
 		}
