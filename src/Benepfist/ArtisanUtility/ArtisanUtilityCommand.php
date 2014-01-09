@@ -89,8 +89,8 @@ class ArtisanUtilityCommand extends Command {
     protected function getOptions()
     {
         return array(
-			array('alias', null, InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY, 'add to require-dev', null),
-			array('provider', null, InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY, 'add to require-dev', null),			
+			array('alias', null, InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY, 'add alias to app.aliases', null),
+			array('provider', null, InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY, 'add provider to app.providers', null),			
 		);
     }	
 
