@@ -1,10 +1,10 @@
-<?php 
+<?php namespace Benepfist\ArtisanUtility;
 
 use Benepfist\ArtisanUtility\ArtisanUtilityCommand;
 use Symfony\Component\Console\Tester\CommandTester;
 use Mockery as m;
 
-class ArtisanUtilityCommandTest extends PHPUnit_Framework_TestCase {
+class ArtisanUtilityCommandTest extends \PHPUnit_Framework_TestCase {
 
     public function tearDown()
     {
