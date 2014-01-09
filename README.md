@@ -16,11 +16,11 @@ Add the service provider to `app/config/app.php`, within the `providers` array.
 'providers' => array(
 	// ...
 
-	'Benepfist\ArtisanUtility\ArtisanUtilityServiceProvider'
+	'Benepfist\ArtisanUtility\ArtisanUtilityServiceProvider',
 )
 ```
 
 Run `php artisan` to view the new laravel:add command:
 
 - **laravel:add --provider="DemoPackage\Demo\DemoServiceProvider"** - Add a new ServiceProvider
-- **laravel:add --alias="Demo, DemoPackage\Facade\Demo"** - Add a new Alias
+- **laravel:add --alias="Demo => DemoPackage\Facade\Demo"** - Add a new Alias

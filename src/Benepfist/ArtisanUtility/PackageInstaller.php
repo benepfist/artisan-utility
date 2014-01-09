@@ -93,7 +93,7 @@ class PackageInstaller
 		$aliasMap = array();
 		foreach ($aliases as $alias) {
 			//array_push($aliasMap, preg_split('/, ?/', $alias));
-			$intAlias = preg_split('/, ?/', $alias);
+			$intAlias = preg_split('/ => ?/', $alias);
 			$aliasMap[ $intAlias[0] ] = $intAlias[1];
 		}
 		return $aliasMap;

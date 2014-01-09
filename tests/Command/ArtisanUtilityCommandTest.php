@@ -39,10 +39,10 @@ class ArtisanUtilityCommandTest extends PHPUnit_Framework_TestCase {
 
         $tester = new CommandTester($command);
         $tester->execute(
-                array('--alias' => array('Demo, Demopackage\Facade\Demo'))
+                array('--alias' => array('Demo => Demopackage\Facade\Demo'))
             );
 
-        $this->assertEquals("Aliases" . PHP_EOL . "Demo, Demopackage\Facade\Demo" . PHP_EOL . "has been added to app.php" . PHP_EOL, $tester->getDisplay());
+        $this->assertEquals("Aliases" . PHP_EOL . "Demo => Demopackage\Facade\Demo" . PHP_EOL . "has been added to app.php" . PHP_EOL, $tester->getDisplay());
     }
 
     public function testNoWritePermission(){
@@ -55,7 +55,7 @@ class ArtisanUtilityCommandTest extends PHPUnit_Framework_TestCase {
 
         $tester = new CommandTester($command);
         $tester->execute(
-                array('--alias' => array('Demo, Demopackage\Facade\Demo'))
+                array('--alias' => array('Demo => Demopackage\Facade\Demo'))
             );
 
         $this->assertEquals("unable to update app.php" . PHP_EOL, $tester->getDisplay());
