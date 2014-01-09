@@ -42,9 +42,13 @@ class ArtisanUtilityCommand extends Command {
 		$providers = $this->option('provider');
 		$aliases = $this->option('alias');
 
-		$this->installer->updateConfigurations($providers, $aliases);
-		$this->showMessage('Providers', $providers);
-		$this->showMessage('Aliases', $aliases);
+		if($this->installer->updateConfigurations($providers, $aliases)){
+			$this->showMessage('Providers', $providers);
+			$this->showMessage('Aliases', $aliases);
+		}
+		else{
+			$this->error("unable to update app.php");
+		}		
 
 	}
 
