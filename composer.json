@@ -19,12 +19,9 @@
         "illuminate/filesystem": "~4"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "Benepfist\\ArtisanUtility\\": "src/"
-        },
-        "classmap": [
-            "src/Benepfist/ArtisanUtility"
-        ]
+        }
     },
     "minimum-stability": "dev"
 }
