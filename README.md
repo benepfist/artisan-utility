@@ -1,5 +1,9 @@
 ## Installation
 
+First ensure you have the latest version of composer installed.
+
+Run `composer self-update`.
+
 Install this package through Composer. To your `composer.json` file, add:
 
 ```js
