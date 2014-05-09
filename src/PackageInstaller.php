@@ -4,8 +4,9 @@ use Illuminate\Filesystem\Filesystem as File;
 use Illuminate\Config\Repository as Config;
 
 /**
-* Installs a packages provided ServiceProviders and Aliases to config/app.php
-*/
+ * 
+ * Installs a packages provided ServiceProviders and Aliases to config/app.php
+ */
 class PackageInstaller
 {
 	/**
