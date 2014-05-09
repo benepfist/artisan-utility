@@ -1,5 +1,3 @@
-https://travis-ci.org/benepfist/artisan-utility.svg?branch=master
-
 ## Installation
 
 First ensure you have the latest version of composer installed.
