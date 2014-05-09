@@ -6,4 +6,7 @@ php:
   - 5.5
   - hhvm
 
+before_script:
+  - composer install --dev
+
 script: phpunit
