@@ -16,13 +16,16 @@ Install this package through Composer. To your `composer.json` file, add:
 
 Next, run `composer install --dev` to download it.
 
-Add the service provider to `app/config/app.php`, within the `providers` array.
+Add the service provider to `app/config/local/app.php`, within the `providers` array.
 
 ```php
-'providers' => array(
-	// ...
+'providers' => append_config(
+	array(
+		// ...
 
-	'Benepfist\ArtisanUtility\ArtisanUtilityServiceProvider',
+		'Benepfist\ArtisanUtility\ArtisanUtilityServiceProvider',
+		)
+	),
 )
 ```
 
