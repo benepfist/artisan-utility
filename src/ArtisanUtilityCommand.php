@@ -90,7 +90,8 @@ class ArtisanUtilityCommand extends Command {
     {
         return array(
 			array('alias', 'a', InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY, 'add alias to app.aliases', null),
-			array('provider', 'p', InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY, 'add provider to app.providers', null),			
+			array('provider', 'p', InputOption::VALUE_OPTIONAL | InputOption::VALUE_IS_ARRAY, 'add provider to app.providers', null),
+			array('environment', 'env', InputOption::VALUE_OPTIONAL, 'choose environment', null),			
 		);
     }	
 
